@@ -1,0 +1,22 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+<div id="error" style="display: none">
+  <noscript>
+    <span class="error">Javascript is not enabled.</span>
+  </noscript>
+</div>
+
+<div class="main-view-content">
+		<div id="viewport">
+			<canvas id="draws" width="500" height="500" ></canvas>
+		</div>
+		<div id="control-view">
+			<canvas id="controls" width="500" height="50"></canvas>
+		</div>
+
+</div>
+
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/main.js")"></script>
+}
